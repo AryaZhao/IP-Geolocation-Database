@@ -7,6 +7,20 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/:date').get((req, res) => {
+  IP.find({date : req.params.date})
+    .then(ip => res.json(ip))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/last/:number').get((req, res) => {
+  IP.find()
+    .sort('-date')
+    .limit(Number(req.params.number))
+    .then(ip => res.json(ip))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
 router.route('/add').post((req, res) => {
   const ip = req.body.ip;
   const city = req.body.city;

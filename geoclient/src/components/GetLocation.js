@@ -35,6 +35,7 @@ class GetLocation extends Component{
       }
     
       render() {
+        var city = this.state.city;
         console.log(this.state);
         return (
             <form onSubmit={this.handleSubmit}>

@@ -21,6 +21,18 @@ $ git clone https://github.com/AryaZhao/IP-Geolocation-Database.git
 
 $ cd IP-Geolocation-Database
 
+$ cd geolocation/backend
+
+$ npm install
+
+$ cd ..
+
+$ npm install
+
+$ cd ..
+
+$ npm install
+
 $ npm start
 
 ## Demo Video

@@ -18,7 +18,9 @@ This is a web app built by using React, MongoDB Atlas, Express, Node.js, nodemon
 ## Instructions
 
 $ git clone https://github.com/AryaZhao/IP-Geolocation-Database.git
+
 $ cd IP-Geolocation-Database
+
 $ npm start
 
 ## Demo Video

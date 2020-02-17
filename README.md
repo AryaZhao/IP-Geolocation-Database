@@ -1,6 +1,6 @@
 # IP Geolocation Database 
 
-This is a web app built by using React, MongoDB, Express, Node.js, nodemon, CORS, axios, Bootstrap, and HTML.
+This is a web app built by using React, MongoDB Atlas, Express, Node.js, nodemon, CORS, axios, Bootstrap, and HTML.
 
 ## Functions
 
@@ -14,5 +14,11 @@ This is a web app built by using React, MongoDB, Express, Node.js, nodemon, CORS
    
 4. Search History
    Query IP location history, get last N locations.
+
+## Instructions
+
+$ git clone https://github.com/AryaZhao/IP-Geolocation-Database.git
+$ cd IP-Geolocation-Database
+$ npm start
 
 ## Demo Video

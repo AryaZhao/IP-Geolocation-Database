@@ -36,12 +36,7 @@ class GetLocation extends Component{
                         ' is in the city of '+this.state.city+
                         ', zipcode '+ this.state.zip+
                         ', date '+ this.state.date);
-                  // const ip_info = {
-                  //   ip: this.state.ip,
-                  //   city: this.state.city,
-                  //   zip: this.state.zip,
-                  //   date: this.state.date
-                  // }
+
                   axios.post('http://localhost:5000/ip/add', this.state)
                     .then(res => console.log(res.data));
                 },
@@ -61,8 +56,8 @@ class GetLocation extends Component{
               <h4>Get city and zipcode of your IP address</h4>
               <br></br>
               <Form>
-                <Form.Label>IP</Form.Label>
-                <Form.Control value={this.state.ip} onChange={this.handleChange}/>
+                <Form.Label>IP address: </Form.Label>
+                <Form.Control placeholder = 'e.g. 160.39.208.28' value={this.state.ip} onChange={this.handleChange}/>
                 <br></br>
                 <Button variant='light' onClick={this.handleClick}>Get Geolocation</Button>
               </Form>

@@ -15,7 +15,7 @@ router.route('/:date').get((req, res) => {
 
 router.route('/last/:number').get((req, res) => {
   IP.find()
-    .sort('-date')
+    .sort({createdAt: -1})
     .limit(Number(req.params.number))
     .then(ip => res.json(ip))
     .catch(err => res.status(400).json('Error: ' + err));

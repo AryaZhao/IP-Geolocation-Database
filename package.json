@@ -1,0 +1,27 @@
+{
+  "name": "idt-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
+    "react-bootstrap": "^1.0.0-beta.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"cd geoclient/backend && node server.js\" \"cd geoclient && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryaZhao/idt-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AryaZhao/idt-test/issues"
+  },
+  "homepage": "https://github.com/AryaZhao/idt-test#readme"
+}

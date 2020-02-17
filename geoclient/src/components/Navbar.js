@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/GetLocation" className="navbar-brand">IDT</Link>
+        <a class="navbar-brand" href="https://aryazhao.github.io/">ARYA ZHAO</a>
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
